@@ -1,0 +1,21 @@
+.footer {
+    background-color: $bg-dark-blue-200;
+    padding-bottom: 50px;
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+    }
+
+    &__copyright,
+    &__confidencial {
+        @include text(15px, 400, 17px);
+        color: $text-gray;
+    }
+
+    &__confidencial {
+        text-decoration: underline;
+    }
+}
