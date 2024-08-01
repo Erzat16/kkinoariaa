@@ -1222,10 +1222,20 @@ main {
   padding: 72px 0 105px;
   box-sizing: border-box;
 }
+@media (max-width: 1024px) and (min-width: 280px) {
+  .subscribe .container {
+    padding: 25px 0;
+  }
+}
 .subscribe__content {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+}
+@media (max-width: 1024px) and (min-width: 280px) {
+  .subscribe__content {
+    padding: 0 20px;
+  }
 }
 .subscribe__title {
   font-size: 42px;
@@ -1233,12 +1243,42 @@ main {
   line-height: 1.25;
   color: #fff;
 }
+@media (max-width: 1024px) and (min-width: 561px) {
+  .subscribe__title {
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 44px;
+  }
+}
+@media (max-width: 560px) {
+  .subscribe__title {
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 31px;
+  }
+}
 .subscribe__description {
   font-size: 22px;
   font-weight: 500;
   line-height: 30px;
   color: #fff;
   margin: 25px 0 35px;
+}
+@media (max-width: 1024px) and (min-width: 561px) {
+  .subscribe__description {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+    margin: 15px 0;
+  }
+}
+@media (max-width: 560px) {
+  .subscribe__description {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    margin: 15px 0;
+  }
 }
 .subscribe__form input[type=text] {
   font-size: 17px;
@@ -1252,8 +1292,33 @@ main {
   outline: none;
   box-sizing: border-box;
 }
+@media (max-width: 560px) {
+  .subscribe__form input[type=text] {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 561px) {
+  .subscribe__form div:first-child {
+    display: flex;
+    gap: 8px;
+  }
+  .subscribe__form div:first-child label {
+    flex: 1;
+  }
+}
+@media (max-width: 560px) {
+  .subscribe__form button {
+    margin-top: 8px;
+    width: 100%;
+  }
+}
 .subscribe .logo {
   margin-bottom: 50px;
+}
+@media (max-width: 1024px) and (min-width: 280px) {
+  .subscribe .logo {
+    margin-bottom: 15px;
+  }
 }
 .subscribe .logo__link {
   justify-content: center;
@@ -1402,6 +1467,33 @@ main {
 .footer__confidencial {
   text-decoration: underline;
 }
+@media (max-width: 1024px) and (min-width: 561px) {
+  .footer .nav__list {
+    gap: 15px;
+  }
+  .footer .nav__link {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+}
+@media (max-width: 560px) {
+  .footer .nav {
+    display: flex;
+    text-align: center;
+  }
+  .footer .nav__list {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) and (min-width: 280px) {
+  .footer .nav {
+    order: -1;
+  }
+}
+.footer .social {
+  order: -2;
+}
 
 .cash-fees {
   padding-bottom: 95px;
@@ -1412,15 +1504,41 @@ main {
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 1024px) and (min-width: 280px) {
+  .cash-fees .section__title {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .cash-fees .section__subtitle {
   margin-top: 25px;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
 }
+@media (max-width: 1024px) and (min-width: 280px) {
+  .cash-fees .section__subtitle {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 1024px) and (min-width: 280px) {
+  .cash-fees .section-list {
+    display: none;
+  }
+}
 .cash-fees__row {
   display: flex;
   gap: 40px;
+}
+@media (max-width: 1024px) and (min-width: 280px) {
+  .cash-fees__row {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
 }
 .cash-fees__column {
   width: 20%;
@@ -1435,11 +1553,35 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 1024px) and (min-width: 280px) {
+  .cash-fees__column img {
+    height: 110px;
+    max-width: 80px;
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 561px) {
+  .cash-fees__column {
+    width: 29%;
+  }
+}
+@media (max-width: 560px) {
+  .cash-fees__column {
+    width: 47%;
+  }
+}
 .cash-fees__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
   color: #fff;
+}
+@media (max-width: 1024px) and (min-width: 280px) {
+  .cash-fees__title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+  }
 }
 .cash-fees__budget {
   font-size: 15px;
@@ -1448,11 +1590,30 @@ main {
   color: #f2f60f;
   margin: 10px 0 5px;
 }
+@media (max-width: 1024px) and (min-width: 280px) {
+  .cash-fees__budget {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+  }
+}
 .cash-fees__period {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.4117647059);
+}
+@media (max-width: 1024px) and (min-width: 280px) {
+  .cash-fees__period {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 280px) {
+  .cash-fees {
+    padding-bottom: 45px;
+  }
 }
 
 .expected {

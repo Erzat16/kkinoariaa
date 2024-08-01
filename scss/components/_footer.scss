@@ -18,4 +18,35 @@
     &__confidencial {
         text-decoration: underline;
     }
+
+    .nav {
+
+        @include tablet {
+            &__list {
+                gap: 15px;
+            }
+
+            &__link {
+                @include text(13px, 700, 16px)
+            }
+        }
+
+
+        @include mobile {
+            display: flex;
+            text-align: center;
+
+            &__list {
+                flex-direction: column;
+            }
+        }
+
+        @include mobile-tablet {
+            order: -1;
+        }
+    }
+
+    .social {
+        order: -2;
+    }
 }

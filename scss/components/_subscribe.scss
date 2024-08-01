@@ -7,23 +7,49 @@
         background-size: cover;
         padding: 72px 0 105px;
         box-sizing: border-box;
+
+        @include mobile-tablet {
+            padding: 25px 0;
+        }
     }
 
     &__content {
         max-width: 800px;
         margin: 0 auto;
         text-align: center;
+
+        @include mobile-tablet {
+            padding: 0 20px;
+        }
     }
 
     &__title {
         @include text(42px, 900);
         color: $text-white;
+
+        @include tablet {
+            @include text(35px, 900, 44px);
+        }
+
+        @include mobile {
+            @include text(25px, 900, 31px);
+        }
     }
 
     &__description {
         @include text(22px, 500, 30px);
         color: $text-white;
         margin: 25px 0 35px;
+
+        @include tablet {
+            @include text(17px, 500, 23px);
+            margin: 15px 0;
+        }
+
+        @include mobile {
+            @include text(15px, 500, 21px);
+            margin: 15px 0;
+        }
     }
 
     &__form {
@@ -36,11 +62,38 @@
             border: none;
             outline: none;
             box-sizing: border-box;
+
+            @include mobile {
+                max-width: 100%;
+            }
+        }
+
+        @include tablet {
+            div:first-child {
+                display: flex;
+                gap: 8px;
+
+                label {
+
+                    flex: 1;
+                }
+            }
+        }
+
+        @include mobile {
+            button {
+                margin-top: 8px;
+                width: 100%;
+            }
         }
     }
 
     .logo {
         margin-bottom: 50px;
+
+        @include mobile-tablet {
+            margin-bottom: 15px;
+        }
 
         &__link {
             justify-content: center;
